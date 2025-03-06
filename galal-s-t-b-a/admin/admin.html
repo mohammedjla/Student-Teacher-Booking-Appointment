@@ -1,0 +1,33 @@
+<!-- admin.html - لوحة تحكم المشرف -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="/firebase.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Admin Dashboard</h2>
+        <button id="logout">Logout</button>
+
+        <section>
+            <h3>Add Teacher</h3>
+            <form id="addTeacherForm">
+                <input type="text" id="teacherName" placeholder="Name" required>
+                <input type="email" id="teacherEmail" placeholder="Email" required>
+                <button type="submit">Add Teacher</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Teachers</h3>
+            <div id="teachersList"></div>
+        </section>
+    </div>
+
+    <script type="module" src="admin.js"></script>
+</body>
+</html>

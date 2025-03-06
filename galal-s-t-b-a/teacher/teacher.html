@@ -1,0 +1,32 @@
+<!-- teacher.html - لوحة تحكم المدرس -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Teacher Dashboard</h2>
+        <button id="logout">Logout</button>
+
+        <section>
+            <h3>Available Slots</h3>
+            <form id="addSlotForm">
+                <input type="text" id="slotTime" placeholder="YYYY-MM-DD HH:MM" required>
+                <button type="submit">Add Slot</button>
+            </form>
+            <div id="slotsList"></div>
+        </section>
+
+        <section>
+            <h3>Appointments</h3>
+            <div id="appointmentsList"></div>
+        </section>
+    </div>
+
+    <script type="module" src="teacher.js"></script>
+</body>
+</html>

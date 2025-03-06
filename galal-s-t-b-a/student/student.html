@@ -1,0 +1,32 @@
+<!-- student.html - لوحة تحكم الطالب -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Dashboard</h2>
+        <button id="logout">Logout</button>
+
+        <section>
+            <h3>Search Teachers</h3>
+            <form id="searchForm">
+                <input type="text" id="teacherName" placeholder="Teacher Name">
+                <button type="submit">Search</button>
+            </form>
+            <div id="teachersList"></div>
+        </section>
+
+        <section>
+            <h3>My Appointments</h3>
+            <div id="appointmentsList"></div>
+        </section>
+    </div>
+
+    <script type="module" src="student.js"></script>
+</body>
+</html>
